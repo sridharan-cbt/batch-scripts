@@ -64,7 +64,7 @@ class FileHandler {
 
         if($_write_flag) {
             $this->set_data_rows($grouped);
-            $this->write_a_csv_file("groupings.csv", "w", "Utils::dump_group_records");
+            $this->write_a_csv_file("outputs/groupings.csv", "w", "Utils::dump_group_records");
         }
     }
 
@@ -87,6 +87,6 @@ class FileHandler {
         fclose($fp);
 
         $this->set_data_rows($target_matched_records);
-        $this->write_a_csv_file("target_records.csv", "w", "Utils::dump_records");
+        $this->write_a_csv_file("outputs/target_records.csv", "w", "Utils::dump_records");
     }
 }

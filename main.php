@@ -20,7 +20,7 @@ for($i=0; $i<$count; $i++) {
     $fh->rows[] = $row;
 }
 
-$fh->dump_records("data.csv", 'a');
-$fh->find_duplicate_records("data.csv", "duplicates-record.csv", 'r');
-$fh->find_grouping_records("data.csv", 1);
-$fh->find_target_records("data.csv", "target.csv");
+$fh->dump_records("csv/data.csv", 'a');
+$fh->find_duplicate_records("csv/data.csv", "outputs/duplicates-record.csv", 'r');
+$fh->find_grouping_records("csv/data.csv", 1);
+$fh->find_target_records("csv/data.csv", "csv/target.csv");
